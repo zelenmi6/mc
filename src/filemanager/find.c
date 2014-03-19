@@ -650,7 +650,7 @@ find_parameters (char **start_dir, ssize_t * start_dir_len,
                    INPUT_COMPLETE_FILENAMES | INPUT_COMPLETE_CD);
                    
     add_widget (find_dlg, in_name);
-    only_directories_cbox = check_new (y1++ 3, options.only_directories, file_only_directories_label);
+    only_directories_cbox = check_new (y1++, 3, options.only_directories, file_only_directories_label);
     add_widget (find_dlg, only_directories_cbox);
 
 
