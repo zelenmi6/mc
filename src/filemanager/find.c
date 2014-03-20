@@ -633,7 +633,7 @@ find_parameters (char **start_dir, ssize_t * start_dir_len,
     add_widget (find_dlg, ignore_dirs_cbox);
 
     in_ignore =
-        input_new (y1++, x1, input_get_default_colors (), cols - 6,
+        input_new ( y1++, x1, input_get_default_colors (), cols - 6,
                    options.ignore_dirs != NULL ? options.ignore_dirs : "", "ignoredirs",
                    INPUT_COMPLETE_CD | INPUT_COMPLETE_FILENAMES);
     widget_disable (WIDGET (in_ignore), !options.ignore_dirs_enable);
